@@ -9,17 +9,18 @@
 #import "CNX_AppDelegate.h"
 
 @implementation CNX_AppDelegate
+@synthesize navigationController = _navigationController;
 
-@synthesize window;
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    // self.window.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:[_navigationController view]];
     [self.window makeKeyAndVisible];
     return YES;
 }

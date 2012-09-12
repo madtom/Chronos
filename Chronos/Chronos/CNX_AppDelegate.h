@@ -10,6 +10,7 @@
 
 @interface CNX_AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (weak, nonatomic) IBOutlet UINavigationController *navigationController;
 @property (strong, nonatomic) IBOutlet UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
