@@ -21,6 +21,14 @@
 		D711CF2D15FBED0000FEEF7E /* CNX_Zeit.m in Sources */ = {isa = PBXBuildFile; fileRef = D711CF2C15FBED0000FEEF7E /* CNX_Zeit.m */; };
 		D75D2C1016009569008332ED /* CNX_MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D2C0F16009569008332ED /* CNX_MenuTableViewController.m */; };
 		D75D2C401600A335008332ED /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75D2C3F1600A335008332ED /* MainWindow.xib */; };
+		D75D2C451600B542008332ED /* CNX_KundenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D2C431600B542008332ED /* CNX_KundenTableViewController.m */; };
+		D75D2C461600B542008332ED /* CNX_KundenTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75D2C441600B542008332ED /* CNX_KundenTableViewController.xib */; };
+		D75D2C4A1600C188008332ED /* CNX_ProjekteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D2C481600C188008332ED /* CNX_ProjekteTableViewController.m */; };
+		D75D2C4B1600C188008332ED /* CNX_ProjekteTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75D2C491600C188008332ED /* CNX_ProjekteTableViewController.xib */; };
+		D75D2C4F1600C3D5008332ED /* CNX_LeistungenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D2C4D1600C3D5008332ED /* CNX_LeistungenTableViewController.m */; };
+		D75D2C501600C3D5008332ED /* CNX_LeistungenTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75D2C4E1600C3D5008332ED /* CNX_LeistungenTableViewController.xib */; };
+		D75D2C541600C4FE008332ED /* CNX_ZeitenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D2C521600C4FE008332ED /* CNX_ZeitenTableViewController.m */; };
+		D75D2C551600C4FE008332ED /* CNX_ZeitenTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75D2C531600C4FE008332ED /* CNX_ZeitenTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +55,18 @@
 		D75D2C0E16009569008332ED /* CNX_MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNX_MenuTableViewController.h; sourceTree = "<group>"; };
 		D75D2C0F16009569008332ED /* CNX_MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNX_MenuTableViewController.m; sourceTree = "<group>"; };
 		D75D2C3F1600A335008332ED /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		D75D2C421600B542008332ED /* CNX_KundenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNX_KundenTableViewController.h; sourceTree = "<group>"; };
+		D75D2C431600B542008332ED /* CNX_KundenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNX_KundenTableViewController.m; sourceTree = "<group>"; };
+		D75D2C441600B542008332ED /* CNX_KundenTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNX_KundenTableViewController.xib; sourceTree = "<group>"; };
+		D75D2C471600C188008332ED /* CNX_ProjekteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNX_ProjekteTableViewController.h; sourceTree = "<group>"; };
+		D75D2C481600C188008332ED /* CNX_ProjekteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNX_ProjekteTableViewController.m; sourceTree = "<group>"; };
+		D75D2C491600C188008332ED /* CNX_ProjekteTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNX_ProjekteTableViewController.xib; sourceTree = "<group>"; };
+		D75D2C4C1600C3D5008332ED /* CNX_LeistungenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNX_LeistungenTableViewController.h; sourceTree = "<group>"; };
+		D75D2C4D1600C3D5008332ED /* CNX_LeistungenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNX_LeistungenTableViewController.m; sourceTree = "<group>"; };
+		D75D2C4E1600C3D5008332ED /* CNX_LeistungenTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNX_LeistungenTableViewController.xib; sourceTree = "<group>"; };
+		D75D2C511600C4FE008332ED /* CNX_ZeitenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNX_ZeitenTableViewController.h; sourceTree = "<group>"; };
+		D75D2C521600C4FE008332ED /* CNX_ZeitenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNX_ZeitenTableViewController.m; sourceTree = "<group>"; };
+		D75D2C531600C4FE008332ED /* CNX_ZeitenTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNX_ZeitenTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +115,7 @@
 		D711CF0015FBD62200FEEF7E /* Chronos */ = {
 			isa = PBXGroup;
 			children = (
-				D75D2C3F1600A335008332ED /* MainWindow.xib */,
+				D75D2C411600B4DC008332ED /* Resources */,
 				D711CF1915FBE88200FEEF7E /* ManagedObjectClasses */,
 				D75D2C11160095BE008332ED /* View Controllers */,
 				D711CF0915FBD62200FEEF7E /* CNX_AppDelegate.h */,
@@ -137,8 +157,28 @@
 			children = (
 				D75D2C0E16009569008332ED /* CNX_MenuTableViewController.h */,
 				D75D2C0F16009569008332ED /* CNX_MenuTableViewController.m */,
+				D75D2C421600B542008332ED /* CNX_KundenTableViewController.h */,
+				D75D2C431600B542008332ED /* CNX_KundenTableViewController.m */,
+				D75D2C471600C188008332ED /* CNX_ProjekteTableViewController.h */,
+				D75D2C481600C188008332ED /* CNX_ProjekteTableViewController.m */,
+				D75D2C4C1600C3D5008332ED /* CNX_LeistungenTableViewController.h */,
+				D75D2C4D1600C3D5008332ED /* CNX_LeistungenTableViewController.m */,
+				D75D2C511600C4FE008332ED /* CNX_ZeitenTableViewController.h */,
+				D75D2C521600C4FE008332ED /* CNX_ZeitenTableViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D75D2C411600B4DC008332ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D75D2C3F1600A335008332ED /* MainWindow.xib */,
+				D75D2C441600B542008332ED /* CNX_KundenTableViewController.xib */,
+				D75D2C491600C188008332ED /* CNX_ProjekteTableViewController.xib */,
+				D75D2C4E1600C3D5008332ED /* CNX_LeistungenTableViewController.xib */,
+				D75D2C531600C4FE008332ED /* CNX_ZeitenTableViewController.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +235,10 @@
 			files = (
 				D711CF0515FBD62200FEEF7E /* InfoPlist.strings in Resources */,
 				D75D2C401600A335008332ED /* MainWindow.xib in Resources */,
+				D75D2C461600B542008332ED /* CNX_KundenTableViewController.xib in Resources */,
+				D75D2C4B1600C188008332ED /* CNX_ProjekteTableViewController.xib in Resources */,
+				D75D2C501600C3D5008332ED /* CNX_LeistungenTableViewController.xib in Resources */,
+				D75D2C551600C4FE008332ED /* CNX_ZeitenTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +257,10 @@
 				D711CF1F15FBE96500FEEF7E /* CNX_Leistung.m in Sources */,
 				D711CF2D15FBED0000FEEF7E /* CNX_Zeit.m in Sources */,
 				D75D2C1016009569008332ED /* CNX_MenuTableViewController.m in Sources */,
+				D75D2C451600B542008332ED /* CNX_KundenTableViewController.m in Sources */,
+				D75D2C4A1600C188008332ED /* CNX_ProjekteTableViewController.m in Sources */,
+				D75D2C4F1600C3D5008332ED /* CNX_LeistungenTableViewController.m in Sources */,
+				D75D2C541600C4FE008332ED /* CNX_ZeitenTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
