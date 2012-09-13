@@ -14,7 +14,7 @@
 
 @implementation CNX_ZeitenTableViewController
 
-@synthesize fetchedResultsController;
+@synthesize fetchedResultsController, tableViewCell, dateFormatter;
 
 -(NSFetchedResultsController *)fetchedResultsController {
     
@@ -28,11 +28,11 @@
     
     // Erzeugen eines Fetch Requests
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Kunde" inManagedObjectContext:appDelegate.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Zeit" inManagedObjectContext:appDelegate.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Erzeugen eines SortDescriptors für den fetch Request
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"datum" ascending:YES];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     [fetchRequest setSortDescriptors:sortDescriptors];
     
@@ -97,15 +97,36 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *MyIdentifier = @"ZeitenListeCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        [[NSBundle mainBundle] loadNibNamed:@"ZeitenTableViewCell" owner:self options:nil];
+        cell = tableViewCell;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        self.tableViewCell = nil;
     }
     
     // Configure the cell...
-    NSManagedObject *managedObject = [fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[managedObject valueForKey:@"name"] description];
+    Zeit *zeit = (Zeit *)[fetchedResultsController objectAtIndexPath:indexPath];
+    
+    UILabel *label;
+    label = (UILabel *)[cell viewWithTag:1];
+    label.text = [dateFormatter stringFromDate:zeit.datum];
+    
+    label = (UILabel *)[cell viewWithTag:2];
+    label.text = [zeit.dauer stringValue];
+    
+    if (zeit.projekt != nil) {
+        label = (UILabel *)[cell viewWithTag:3];
+        NSString *text = zeit.projekt.name;
+        if (zeit.projekt.kunde != nil) {
+            text = [NSString stringWithFormat:@"%@(%@)", text, zeit.projekt.kunde.name];
+        }
+        label.text = text;
+    }
+    
+    label = (UILabel *)[cell viewWithTag:4];
+    label.text = zeit.leistung.name;
     
     return cell;
 }
@@ -161,5 +182,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
+
+#pragma mark - Own Methods
+
 
 @end

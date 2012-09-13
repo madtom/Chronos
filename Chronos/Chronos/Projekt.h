@@ -7,12 +7,14 @@
 //
 
 #import <CoreData/CoreData.h>
+#import "Kunde.h"
 
-@interface CNX_Projekt : NSManagedObject
+@interface Projekt : NSManagedObject
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *bemerkung;
 @property (nonatomic, retain) NSDecimalNumber *budget;
 @property (nonatomic, retain) NSString *budgetTyp;
+@property (nonatomic, retain) Kunde *kunde;
 
 @end

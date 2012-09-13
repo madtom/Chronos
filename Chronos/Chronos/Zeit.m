@@ -1,16 +1,15 @@
 //
-//  CNX_Kunde.m
+//  CNX_Zeit.m
 //  Chronos
 //
 //  Created by Thomas Dubiel on 08.09.12.
 //  Copyright (c) 2012 Thomas Dubiel. All rights reserved.
 //
 
-#import "CNX_Kunde.h"
+#import "Zeit.h"
 
-@implementation CNX_Kunde
+@implementation Zeit
 
-@dynamic name;
-@dynamic bemerkung;
+@dynamic datum, bemerkung, dauer, leistung, projekt;
 
 @end

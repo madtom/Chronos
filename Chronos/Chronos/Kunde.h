@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface CNX_Kunde : NSManagedObject
+@interface Kunde : NSManagedObject
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *bemerkung;

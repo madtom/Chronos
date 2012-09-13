@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface CNX_Leistung : NSManagedObject
+@interface Leistung : NSManagedObject
 
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *bemerkung;

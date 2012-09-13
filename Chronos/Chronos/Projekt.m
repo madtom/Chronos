@@ -6,10 +6,10 @@
 //  Copyright (c) 2012 Thomas Dubiel. All rights reserved.
 //
 
-#import "CNX_Projekt.h"
+#import "Projekt.h"
 
-@implementation CNX_Projekt
+@implementation Projekt
 
-@dynamic name, bemerkung, budget, budgetTyp;
+@dynamic name, bemerkung, budget, budgetTyp, kunde;
 
 @end

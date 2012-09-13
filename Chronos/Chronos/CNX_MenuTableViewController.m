@@ -14,6 +14,36 @@
 
 @implementation CNX_MenuTableViewController
 
+@synthesize kundenTableViewController, projekteTableViewController, leistungenTableViewController, zeitenTableViewController;
+
+-(CNX_KundenTableViewController *)kundenTableViewController {
+    if (kundenTableViewController == nil) {
+        kundenTableViewController = [[CNX_KundenTableViewController alloc] initWithNibName:@"CNX_KundenTableViewController" bundle:nil];
+    }
+    return kundenTableViewController;
+}
+
+-(CNX_ProjekteTableViewController *)projekteTableViewController {
+    if (projekteTableViewController == nil) {
+        projekteTableViewController = [[CNX_ProjekteTableViewController alloc] initWithNibName:@"CNX_ProjekteTableViewController" bundle:nil];
+    }
+    return projekteTableViewController;
+}
+
+-(CNX_LeistungenTableViewController *)leistungenTableViewController {
+    if (leistungenTableViewController == nil) {
+        leistungenTableViewController = [[CNX_LeistungenTableViewController alloc] initWithNibName:@"CNX_LeistungenTableViewController" bundle:nil];
+    }
+    return leistungenTableViewController;
+}
+
+-(CNX_ZeitenTableViewController *)zeitenTableViewController {
+    if (zeitenTableViewController == nil) {
+        zeitenTableViewController = [[CNX_ZeitenTableViewController alloc] initWithNibName:@"CNX_ZeitenTableViewController" bundle:nil];
+    }
+    return zeitenTableViewController;
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -132,12 +162,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    UITableViewController *controller = nil;
+    
+    switch (indexPath.row) {
+        case 0:
+            controller = self.kundenTableViewController;
+            break;
+        case 1:
+            controller = self.projekteTableViewController;
+            break;
+        case 2:
+            controller = self.leistungenTableViewController;
+            break;
+        case 3:
+            controller = self.zeitenTableViewController;
+            break;
+    }
+    [self.navigationController pushViewController:controller animated:YES];
+
 }
 
 @end

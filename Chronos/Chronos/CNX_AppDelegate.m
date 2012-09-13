@@ -22,6 +22,14 @@
     // self.window.backgroundColor = [UIColor whiteColor];
     [self.window addSubview:[_navigationController view]];
     [self.window makeKeyAndVisible];
+    
+    
+    // vorübergehende Daten in Kunden
+    NSManagedObject *kunde1 = [NSEntityDescription insertNewObjectForEntityForName:@"Kunde" inManagedObjectContext:self.managedObjectContext];
+    NSManagedObject *kunde2 = [NSEntityDescription insertNewObjectForEntityForName:@"Kunde" inManagedObjectContext:self.managedObjectContext];
+    [kunde1 setValue:@"Schumann" forKey:@"name"];
+    [kunde2 setValue:@"Dubiel" forKey:@"name"];
+    
     return YES;
 }
 

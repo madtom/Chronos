@@ -1,15 +1,16 @@
 //
-//  CNX_Leistung.m
+//  CNX_Kunde.m
 //  Chronos
 //
 //  Created by Thomas Dubiel on 08.09.12.
 //  Copyright (c) 2012 Thomas Dubiel. All rights reserved.
 //
 
-#import "CNX_Leistung.h"
+#import "Kunde.h"
 
-@implementation CNX_Leistung
+@implementation Kunde
 
-@dynamic name, bemerkung, stundensatz, fakturierbar;
+@dynamic name;
+@dynamic bemerkung;
 
 @end

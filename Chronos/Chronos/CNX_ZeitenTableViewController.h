@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#include "CNX_AppDelegate.h"
+#import "CNX_AppDelegate.h"
+#import "Zeit.h"
 
 @interface CNX_ZeitenTableViewController : UITableViewController
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (nonatomic, assign) IBOutlet UITableViewCell *tableViewCell;
 
 @end

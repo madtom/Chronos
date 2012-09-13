@@ -30,8 +30,8 @@
     <fetchRequest name="FakturierbareLeistungen" entity="Leistung" predicateString="fakturierbar == 1"/>
     <elements>
         <element name="Kunde" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Projekt" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Leistung" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Projekt" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Zeit" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

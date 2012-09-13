@@ -7,11 +7,17 @@
 //
 
 #import <CoreData/CoreData.h>
+#import "Leistung.h"
+#import "Projekt.h"
 
-@interface CNX_Zeit : NSManagedObject
+//@class Leistung, Projekt;
+
+@interface Zeit : NSManagedObject
 
 @property (nonatomic, retain) NSDate *datum;
 @property (nonatomic, retain) NSString *bemerkung;
+@property (nonatomic, retain) Leistung *leistung;
+@property (nonatomic, retain) Projekt *projekt;
 @property (nonatomic, retain) NSDecimalNumber *dauer;
 
 

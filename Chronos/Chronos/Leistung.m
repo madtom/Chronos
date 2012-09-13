@@ -1,15 +1,15 @@
 //
-//  CNX_Zeit.m
+//  CNX_Leistung.m
 //  Chronos
 //
 //  Created by Thomas Dubiel on 08.09.12.
 //  Copyright (c) 2012 Thomas Dubiel. All rights reserved.
 //
 
-#import "CNX_Zeit.h"
+#import "Leistung.h"
 
-@implementation CNX_Zeit
+@implementation Leistung
 
-@dynamic datum, bemerkung, dauer;
+@dynamic name, bemerkung, stundensatz, fakturierbar;
 
 @end
